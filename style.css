@@ -1,0 +1,322 @@
+html {
+  box-sizing: border-box;
+}
+html *,
+::after,
+::before {
+  box-sizing: inherit;
+}
+button {
+  border: none;
+  background: transparent;
+}
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  line-height: 1;
+  font-family: "Inter";
+  background-color: white;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+}
+.maininfo-cont {
+  max-width: 320px;
+  padding: 0 32px 0 17px;
+  margin: 40px auto 28px;
+}
+.maininfo-title {
+  color: #173414;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 17px 0 10px;
+}
+.maininfo-way {
+  display: inline;
+  padding: 3px 9px;
+  color: #212824;
+  font-size: 16px;
+  border-radius: 20px;
+  font-weight: 400;
+  background: #c4ef8e;
+}
+.properties-list {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.properties-list-item {
+  color: #173414;
+  font-size: 16px;
+  font-weight: 400;
+}
+.discreption {
+  margin: 16px 0;
+}
+.discreption-title {
+  color: #000;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+.discreption-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+.userinfo {
+  border-radius: 20px;
+  background: #dfe6e1;
+  padding: 15px 28px 15px 16px;
+  display: flex;
+  gap: 12px;
+}
+.profile-svg {
+  width: 100px;
+  height: 100px;
+}
+.user-name {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.user-adress {
+  color: #686a67;
+  font-size: 11px;
+  font-weight: 600;
+}
+.userinfos {
+  width: 115px;
+}
+.user-contact {
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+}
+.wishes {
+  border-radius: 20px;
+  background: #dfe6e1;
+  padding: 11px 15px 14px 13px;
+}
+.wishes-title {
+  color: #000;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.user {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+.wishes-text {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .maininfo-cont {
+    max-width: 768px;
+    padding: 0 51px 0 44px;
+    margin: 92.4px auto 30px;
+  }
+  .maininfo {
+    display: flex;
+    gap: 14px;
+  }
+  .maininfo-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  .maininfo-way {
+    padding: 5px 16px 6px 12px;
+    font-size: 24px;
+  }
+  .properties-list {
+    margin-top: 29px;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 19px;
+    column-gap: 11px;
+  }
+  .properties-list-item {
+    display: inline;
+    font-size: 21px;
+  }
+  .properties-list-item span {
+    display: block;
+  }
+  .discreption {
+    margin: 30px 0 40px;
+  }
+  .discreption-title {
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .discreption-text {
+    font-size: 26px;
+  }
+  .user {
+    flex-wrap: nowrap;
+    gap: 43px;
+  }
+  .userinfo {
+    padding: 26px 20px 25px 25px;
+    gap: 15px;
+  }
+  .profile-svg {
+    width: 160px;
+    height: 160px;
+  }
+  .user-name {
+    font-size: 20px;
+  }
+  .user-adress {
+    font-size: 14px;
+  }
+  .userinfos {
+    width: 150px;
+  }
+  .user-contact {
+    font-size: 16px;
+  }
+  .wishes {
+    padding: 22px 18px 57px 13px;
+  }
+  .wishes-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .wishes-text {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .maininfo-cont {
+    max-width: 1440px;
+    padding: 0 93px;
+    margin: 100px auto 51px;
+  }
+  .maininfo {
+    gap: 59px;
+  }
+  .maininfo-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 90px;
+  }
+  .maininfo-way {
+    padding: 5px 12px;
+    font-size: 36px;
+  }
+  .properties-list {
+    margin-top: 41px;
+    height: 296px;
+    row-gap: 25px;
+    column-gap: 109px;
+  }
+  .properties-list-item {
+    font-size: 32px;
+  }
+  .discreption {
+    margin: 51px 0 176px;
+  }
+  .discreption-title {
+    font-size: 64px;
+    margin-bottom: 23px;
+  }
+  .discreption-text {
+    font-size: 40px;
+    font-weight: 300;
+  }
+  .user {
+    gap: 100px;
+  }
+  .userinfo {
+    padding: 34px 59px 32px 31px;
+    gap: 23px;
+  }
+  .profile-svg {
+    width: 241px;
+    height: 241px;
+  }
+  .user-name {
+    font-size: 36px;
+    margin-bottom: 23px;
+  }
+  .user-adress {
+    font-size: 24px;
+
+  }
+  .userinfos {
+    width: 364px;
+  }
+  .user-contact{
+    font-size: 24px;
+    display: block;
+    margin:20px 0;
+  }
+  .wishes {
+    padding: 34px 36px 110px 33px;
+  }
+  .wishes-title {
+    font-size: 36px;
+  }
+  .wishes-text {
+    font-size: 28px;
+  }
+}
