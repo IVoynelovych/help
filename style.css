@@ -1,53 +1,39 @@
-html {
-  box-sizing: border-box;
+*{
+	padding: 0;
+	margin: 0; 
+	box-sizing: border-box;
 }
-html *,
-::after,
-::before {
-  box-sizing: inherit;
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
-button {
-  border: none;
-  background: transparent;
-}
-.is-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-ul,
-ol,
-li {
-  margin: 0;
+nav,footer,header,aside{display: block;}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
-ul,
-ol {
-  list-style: none;
-}
+input, button, textarea{font-family: inherit;}
 
-img {
-  display: block;
-}
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+img{display: block;}
 
-ul {
-  padding: 0;
-  margin: 0;
-}
+h1,h2, h3, h4, h5, h6{font-style: inherit; font-weight: 400;}
 
 body {
   margin: 0;
@@ -70,18 +56,21 @@ input {
   padding: 0;
   margin: 0;
 }
-.maininfo-cont {
-  max-width: 320px;
-  padding: 0 32px 0 17px;
-  margin: 40px auto 28px;
+.advert{
+  margin: 40px 0 28px;
 }
-.maininfo-title {
+.maininfo-cont {
+  max-width: 296px;
+  margin: 0 auto;
+  
+}
+.maininfo__title {
   color: #173414;
   font-size: 26px;
   font-weight: 500;
   margin: 17px 0 10px;
 }
-.maininfo-way {
+.maininfo__way {
   display: inline;
   padding: 3px 9px;
   color: #212824;
@@ -90,13 +79,13 @@ input {
   font-weight: 400;
   background: #c4ef8e;
 }
-.properties-list {
+.properties {
   margin-top: 15px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
-.properties-list-item {
+.properties__item {
   color: #173414;
   font-size: 16px;
   font-weight: 400;
@@ -104,13 +93,13 @@ input {
 .discreption {
   margin: 16px 0;
 }
-.discreption-title {
+.discreption__title {
   color: #000;
   font-size: 26px;
   font-weight: 400;
   margin-bottom: 6px;
 }
-.discreption-text {
+.discreption__text {
   font-size: 16px;
   font-weight: 400;
 }
@@ -121,16 +110,16 @@ input {
   display: flex;
   gap: 12px;
 }
-.profile-svg {
+.userinfo__svg {
   width: 100px;
   height: 100px;
 }
-.user-name {
+.userinfos__name {
   color: #000;
   font-size: 16px;
   font-weight: 600;
 }
-.user-adress {
+.userinfos__adress {
   color: #686a67;
   font-size: 11px;
   font-weight: 600;
@@ -138,17 +127,22 @@ input {
 .userinfos {
   width: 115px;
 }
-.user-contact {
+.userinfo__contact {
   color: #000;
   font-size: 12px;
   font-weight: 600;
+  display: block;
+  margin-top: 3px;
+}
+.userinfo__contact + .userinfo__contact{
+  margin-top: 1px;
 }
 .wishes {
   border-radius: 20px;
   background: #dfe6e1;
   padding: 11px 15px 14px 13px;
 }
-.wishes-title {
+.wishes__title {
   color: #000;
   font-size: 17px;
   font-weight: 400;
@@ -159,31 +153,33 @@ input {
   flex-wrap: wrap;
   gap: 22px;
 }
-.wishes-text {
+.wishes__text {
   color: #000;
   font-size: 14px;
   font-weight: 400;
 }
 @media screen and (min-width: 768px) {
+  .advert{
+    margin: 92.4px 0 30px;
+  }
   .maininfo-cont {
-    max-width: 768px;
-    padding: 0 51px 0 44px;
-    margin: 92.4px auto 30px;
+    max-width: 692px;
+
   }
   .maininfo {
     display: flex;
     gap: 14px;
   }
-  .maininfo-title {
+  .maininfo__title {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 40px;
   }
-  .maininfo-way {
+  .maininfo__way{
     padding: 5px 16px 6px 12px;
     font-size: 24px;
   }
-  .properties-list {
+  .properties {
     margin-top: 29px;
     height: 184px;
     display: flex;
@@ -192,22 +188,22 @@ input {
     row-gap: 19px;
     column-gap: 11px;
   }
-  .properties-list-item {
+  .properties__item {
     display: inline;
     font-size: 21px;
   }
-  .properties-list-item span {
+  .properties__item span {
     display: block;
   }
   .discreption {
     margin: 30px 0 40px;
   }
-  .discreption-title {
+  .discreption__title {
     font-size: 44px;
     font-weight: 400;
     margin-bottom: 10px;
   }
-  .discreption-text {
+  .discreption__text {
     font-size: 26px;
   }
   .user {
@@ -218,68 +214,73 @@ input {
     padding: 26px 20px 25px 25px;
     gap: 15px;
   }
-  .profile-svg {
+  .userinfo__svg{
     width: 160px;
     height: 160px;
   }
-  .user-name {
+  .userinfos__name {
     font-size: 20px;
   }
-  .user-adress {
+  .userinfos__adress {
     font-size: 14px;
   }
   .userinfos {
     width: 150px;
   }
-  .user-contact {
+  .userinfo__contact {
     font-size: 16px;
+    margin-top: 6px;
+  }
+  .userinfo__contact + .userinfo__contact{
+    margin-top: 6px;
   }
   .wishes {
     padding: 22px 18px 57px 13px;
   }
-  .wishes-title {
+  .wishes__title{
     font-size: 24px;
     margin-bottom: 15px;
   }
-  .wishes-text {
+  .wishes__text {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 1440px) {
+  .advert{
+    margin: 100px 0 51px;
+  }
   .maininfo-cont {
-    max-width: 1440px;
-    padding: 0 93px;
-    margin: 100px auto 51px;
+    max-width: 1254px;
   }
   .maininfo {
     gap: 59px;
   }
-  .maininfo-title {
+  .maininfo__title{
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 90px;
   }
-  .maininfo-way {
+  .maininfo__way{
     padding: 5px 12px;
     font-size: 36px;
   }
-  .properties-list {
+  .properties {
     margin-top: 41px;
     height: 296px;
     row-gap: 25px;
     column-gap: 109px;
   }
-  .properties-list-item {
+  .properties__item {
     font-size: 32px;
   }
   .discreption {
     margin: 51px 0 176px;
   }
-  .discreption-title {
+  .discreption__title {
     font-size: 64px;
     margin-bottom: 23px;
   }
-  .discreption-text {
+  .discreption__text {
     font-size: 40px;
     font-weight: 300;
   }
@@ -290,33 +291,36 @@ input {
     padding: 34px 59px 32px 31px;
     gap: 23px;
   }
-  .profile-svg {
+  .userinfo__svg {
     width: 241px;
     height: 241px;
   }
-  .user-name {
+  .userinfos__name{
     font-size: 36px;
     margin-bottom: 23px;
   }
-  .user-adress {
+  .userinfos__adress {
     font-size: 24px;
 
   }
   .userinfos {
     width: 364px;
   }
-  .user-contact{
-    font-size: 24px;
-    display: block;
-    margin:20px 0;
+
+  .userinfo__contact{
+    font-size: 24px;    
+    margin-top:20px;
+  }
+  .userinfo__contact + .userinfo__contact{
+    margin-top:20px;
   }
   .wishes {
     padding: 34px 36px 110px 33px;
   }
-  .wishes-title {
+  .wishes__title{
     font-size: 36px;
   }
-  .wishes-text {
+  .wishes__text {
     font-size: 28px;
   }
 }
