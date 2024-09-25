@@ -37,71 +37,71 @@
 .properties__item + .properties__item {
   margin-top: 8px;
 }
-.discreption {
+.advert-discreption {
   margin-top: 16px;
 }
-.discreption__title {
+.advert-discreption__title {
   color: #000;
   font-size: 26px;
   font-weight: 400;
   margin-bottom: 6px;
 }
-.discreption__text {
+.advert-discreption__text {
   font-size: 16px;
   font-weight: 400;
 }
-.userinfo {
+.advert-userinfo{
   border-radius: 20px;
   background: #dfe6e1;
   padding: 15px 28px 15px 16px;
   display: flex;
   gap: 12px;
 }
-.userinfo__svg {
+.advert-userinfo__svg {
   width: 100px;
   height: 100px;
 }
-.userinfos__name {
+.advert-userinfos__name {
   color: #000;
   font-size: 16px;
   font-weight: 600;
 }
-.userinfos__adress {
+.advert-userinfos__adress {
   color: #686a67;
   font-size: 11px;
   font-weight: 600;
 }
-.userinfos {
+.advert-userinfos {
   width: 115px;
 }
-.userinfo__contact {
+.advert-userinfo__contact {
   color: #000;
   font-size: 12px;
   font-weight: 600;
   display: block;
   margin-top: 3px;
 }
-.userinfo__contact + .userinfo__contact {
+.advert-userinfo__contact + .advert-userinfo__contact {
   margin-top: 1px;
 }
-.wishes {
+.advert-wishes {
   border-radius: 20px;
   background: #dfe6e1;
   padding: 11px 15px 14px 13px;
 }
-.wishes__title {
+.advert-wishes__title {
   color: #000;
   font-size: 17px;
   font-weight: 400;
   margin-bottom: 10px;
 }
-.user {
+.advert-user {
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
   margin-top: 16px;
 }
-.wishes__text {
+.advert-wishes__text {
   color: #000;
   font-size: 14px;
   font-weight: 400;
@@ -113,7 +113,7 @@
   .container {
     max-width: 692px;
   }
-  .maininfo {
+  .advert-maininfo {
     display: flex;
     gap: 14px;
   }
@@ -145,54 +145,54 @@
   .properties__item span {
     display: block;
   }
-  .discreption {
+  .advert-discreption  {
     margin-top: 30px;
   }
-  .discreption__title {
+  .advert-discreption__title {
     font-size: 44px;
     font-weight: 400;
     margin-bottom: 10px;
   }
-  .discreption__text {
+  .advert-discreption__text {
     font-size: 26px;
   }
-  .user {
+  .advert-user {
     flex-wrap: nowrap;
     gap: 43px;
     margin-top: 40px;
   }
-  .userinfo {
+  .advert-userinfo{
     padding: 26px 20px 25px 25px;
     gap: 15px;
   }
-  .userinfo__svg {
+  .advert-userinfo__svg {
     width: 160px;
     height: 160px;
   }
-  .userinfos__name {
+  .advert-userinfos__name {
     font-size: 20px;
   }
-  .userinfos__adress {
+  .advert-userinfos__adress {
     font-size: 14px;
   }
-  .userinfos {
+  .advert-userinfos {
     width: 150px;
   }
-  .userinfo__contact {
+  .advert-userinfo__contact {
     font-size: 16px;
     margin-top: 6px;
   }
-  .userinfo__contact + .userinfo__contact {
+  .advert-userinfo__contact + .advert-userinfo__contact {
     margin-top: 6px;
   }
-  .wishes {
+  .advert-wishes {
     padding: 22px 18px 57px 13px;
   }
-  .wishes__title {
+  .advert-wishes__title {
     font-size: 24px;
     margin-bottom: 15px;
   }
-  .wishes__text {
+  .advert-wishes__text {
     font-size: 18px;
   }
 }
@@ -203,7 +203,7 @@
   .container {
     max-width: 1254px;
   }
-  .maininfo {
+  .advert-maininfo {
     gap: 59px;
   }
   .maininfo__title {
@@ -224,54 +224,54 @@
   .properties__item {
     font-size: 32px;
   }
-  .discreption {
+  .advert-discreption  {
     margin-top: 51px;
   }
-  .discreption__title {
+  .advert-discreption__title {
     font-size: 64px;
     margin-bottom: 23px;
   }
-  .discreption__text {
+  .advert-discreption__text {
     font-size: 40px;
     font-weight: 300;
   }
-  .user {
+  .advert-user {
     gap: 100px;
     margin-top: 176px;
   }
-  .userinfo {
+  .advert-userinfo{
     padding: 34px 59px 32px 31px;
     gap: 23px;
   }
-  .userinfo__svg {
+  .advert-userinfo__svg {
     width: 241px;
     height: 241px;
   }
-  .userinfos__name {
+  .advert-userinfos__name {
     font-size: 36px;
     margin-bottom: 23px;
   }
-  .userinfos__adress {
+  .advert-userinfos__adress {
     font-size: 24px;
   }
-  .userinfos {
+  .advert-userinfos{
     width: 364px;
   }
 
-  .userinfo__contact {
+  .advert-userinfo__contact {
     font-size: 24px;
     margin-top: 20px;
   }
-  .userinfo__contact + .userinfo__contact {
+  .advert-userinfo__contact + .advert-userinfo__contact {
     margin-top: 20px;
   }
-  .wishes {
+  .advert-wishes {
     padding: 34px 36px 110px 33px;
   }
-  .wishes__title {
+  .advert-wishes__title {
     font-size: 36px;
   }
-  .wishes__text {
+  .advert-wishes__text {
     font-size: 28px;
   }
 }
