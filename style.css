@@ -5,17 +5,17 @@
   max-width: 296px;
   margin: 0 auto;
 }
-.maininfo__picture {
+.advert-maininfo__picture {
   display: block;
   margin-bottom: 17px;
 }
-.maininfo__title {
+.advert-maininfo__title {
   color: #173414;
   font-size: 26px;
   font-weight: 500;
   margin-bottom: 10px;
 }
-.maininfo__way {
+.advert-maininfo__way {
   display: inline;
   padding: 3px 9px;
   color: #212824;
@@ -28,13 +28,13 @@
   margin-top: 15px;
   
 }
-.properties__item {
+.advert-properties__item {
   color: #173414;
   font-size: 16px;
   display: block;
   font-weight: 400;
 }
-.properties__item + .properties__item {
+.advert-properties__item + .advert-properties__item {
   margin-top: 8px;
 }
 .advert-discreption {
@@ -117,12 +117,15 @@
     display: flex;
     gap: 14px;
   }
-  .maininfo__title {
+  .advert-maininfo__title {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 40px;
   }
-  .maininfo__way {
+  .advert-maininfo__picture {
+    margin-bottom: 0;
+  }
+  .advert-maininfo__way {
     padding: 5px 16px 6px 12px;
     font-size: 24px;
   }
@@ -135,14 +138,14 @@
     row-gap: 19px;
     column-gap: 11px;
   }
-  .properties__item {
+  .advert-properties__item {
     display: inline;
     font-size: 21px;
   }
-  .properties__item + .properties__item{
+  .advert-properties__item + .advert-properties__item{
     margin-top: 0;
   }
-  .properties__item span {
+  .advert-properties__item span {
     display: block;
   }
   .advert-discreption  {
@@ -206,12 +209,12 @@
   .advert-maininfo {
     gap: 59px;
   }
-  .maininfo__title {
+  .advert-maininfo__title {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 90px;
   }
-  .maininfo__way {
+  .advert-maininfo__way {
     padding: 5px 12px;
     font-size: 36px;
   }
@@ -221,7 +224,7 @@
     row-gap: 25px;
     column-gap: 109px;
   }
-  .properties__item {
+  .advert-properties__item {
     font-size: 32px;
   }
   .advert-discreption  {
